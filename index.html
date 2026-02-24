@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro Timer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <img src="img_mv_gakucho.png" alt="Animated Character" id="animated-char">
+
+    <div class="timer-container">
+        <div class="settings-container">
+            <div>
+                <label for="work-duration">Work (min):</label>
+                <input type="number" id="work-duration" value="25" min="1">
+            </div>
+            <div>
+                <label for="break-duration">Break (min):</label>
+                <input type="number" id="break-duration" value="5" min="1">
+            </div>
+            <button id="set-btn">Set</button>
+        </div>
+        <div id="mode-display">Work</div>
+        <div id="time-display">25:00</div>
+        <div class="buttons">
+            <button id="start-pause-btn">Start</button>
+            <button id="reset-btn">Reset</button>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
